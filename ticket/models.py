@@ -19,5 +19,8 @@ class Ticket(models.Model):
     priority = models.CharField(max_length=10, choices=Priority.choices, default=Priority.LOW)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        indexes = [models.Index(fields=["status", "-created_at"])]
+
     def __str__(self):
         return self.title
