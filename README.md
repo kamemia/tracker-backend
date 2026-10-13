@@ -11,8 +11,10 @@
 1. Clone the repository and enter the project directory:
 
 ```bash
+
    git clone https://github.com/kamemia/tracker-backend.git
    cd tracker-backend
+
 ```
 
 2. Create and activate the virtual environment:
